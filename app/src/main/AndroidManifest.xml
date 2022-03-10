@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.user.goservice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Goservice">
+        <activity android:name=".VehicleSales.SellVehicleActivity"></activity>
+        <activity android:name=".VehicleSales.ARActivity" />
+        <activity android:name=".VehicleSales.SalesPageActivity" />
+        <activity android:name=".VehicleSales.VehicleSalesActivity" />
+        <activity android:name=".Navigation.VehicleActivity" />
+        <activity android:name=".Navigation.ProfileActivity" />
+        <activity android:name=".Booking.BookingActivity" />
+        <activity android:name=".Services.FullServiceActivity" />
+        <activity android:name=".Services.GeneralServiceActivity" />
+        <activity android:name=".Services.ServicesActivity" />
+        <activity android:name=".Addvehicles.AddVehicleActivity" />
+        <activity android:name=".Addusers.AddUserActivity" />
+        <activity android:name=".Navigation.NavigationActivity" />
+        <activity android:name=".Authentication.OtpActivity" />
+        <activity android:name=".Authentication.AuthenticationActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="optional" />
+    </application>
+
+</manifest>

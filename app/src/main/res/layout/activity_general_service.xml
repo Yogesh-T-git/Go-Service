@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityGeneralService"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ede8e8"
+    tools:context=".Services.GeneralServiceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/theme_red"
+        android:padding="10dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="25dp"
+            android:text="@string/general_service"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="0dp">
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/serviceProvidedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/services_provided"
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/OilChangeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/serviceProvidedTextView"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/oil_change"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/OilChangeDescTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/OilChangeTextView"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/engine_lubrication"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ElectricalIssuesTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/OilChangeDescTextView"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/electrical_issues"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/chainProvidedDescTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ElectricalIssuesTextView"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/ignition_battery_and_checking_fuses"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/clucthandBrakeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chainProvidedDescTextView"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/clutch_and_brake_issues"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ClutchandBrakeDescTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/clucthandBrakeTextView"
+                    android:layout_marginTop="3dp"
+
+                    android:text="@string/inspecting_clutch_wire_brake_fluid_and_replacement"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/AirFilterTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ClutchandBrakeDescTextView"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/air_filter_change"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/AirFilterDescTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/AirFilterTextView"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/air_filter_cleansing_and_replacement"
+                    android:textSize="15sp" />
+
+                <android.widget.Button
+                    android:id="@+id/addToCartButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/AirFilterDescTextView"
+                    android:layout_marginTop="100dp"
+                    android:background="@drawable/theme_button"
+                    android:text="@string/add_to_cart"
+                    android:textColor="#FFF" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </ScrollView>
+
+    <android.widget.Button
+        android:id="@+id/proceedToCartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/stroke_bg"
+        android:text="@string/view_cart"
+        android:textColor="#FFF" />
+
+
+</RelativeLayout>
